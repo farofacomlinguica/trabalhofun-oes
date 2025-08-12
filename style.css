@@ -1,0 +1,66 @@
+:root {
+    --cor-fundo: #0b2e13; /* verde escuro */
+    --cor-principal: #164d28;
+    --cor-secundaria: #2a6f3a;
+    --cor-destaque: #b22222; /* vermelho sangue */
+    --cor-texto: #c9d6c5; /* verde clarinho */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Creepster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px 20px;
+    border: 3px solid var(--cor-destaque);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px var(--cor-destaque);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px var(--cor-destaque);
+    width: 100%;
+    max-width: 500px;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    box-shadow: 0 0 15px var(--cor-destaque);
+}
+
+.caixa-resultado {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 120px;
+}
+}
